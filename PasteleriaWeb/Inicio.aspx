@@ -12,6 +12,7 @@
         body {
             padding-top: 70px;
         }
+
     </style>
 </head>
 <body>
@@ -39,6 +40,32 @@
                 <div class="col-md-6">
 
                     <h3>Formulario de pastel</h3>
+                    <asp:Panel runat="server" Visible="false" ID="PanelAlerta">
+                        <div class="alert alert-success alert-dismissible" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <strong>Buen trabajo!</strong>
+                            <label>
+                                El pastel ha sido agregado con éxito. 
+                            </label>
+                        </div>
+                    </asp:Panel>
+
+                    <asp:Panel ID="pnlAlertaError" runat="server" Visible="false">
+
+
+                        <div class="alert alert-danger alert-dismissible" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <strong>Oppssss!</strong>
+                            <label>
+                                Ocurrio un error al intentar guardar el pastel. 
+                            </label>
+                        </div>
+
+
+                    </asp:Panel>
+                    <div class="form-group">
+                        <asp:TextBox runat="server" ID="txtIdPastel" CssClass="form-control" Visible="false" />
+                    </div>
 
                     <div class="form-group">
                         <label>Nombre Pastel</label>
@@ -54,7 +81,7 @@
 
                     <div class="form-group">
 
-                        <asp:Button Text="Guardar" runat="server" ID="btnGuardar" CssClass="btn btn-success btn-block" />
+                        <asp:Button Text="Guardar" runat="server" ID="btnGuardar" CssClass="btn btn-success btn-block" OnClick="btnGuardar_Click" />
 
                     </div>
 
@@ -62,18 +89,21 @@
 
                 </div>
                 <div class="col-md-6">
+                    <div class="tamanio-tabla table-responsive">
+                        <asp:GridView ID="gvPasteles" runat="server" AutoGenerateColumns="False" CssClass="table table-hover" GridLines="None" OnRowCommand="gvPasteles_RowCommand">
+                            <Columns>
+                                <asp:BoundField DataField="idPastel" HeaderText="Codigo Pastel" />
+                                <asp:BoundField DataField="nombrePastel" HeaderText="Nombre Pastel" />
+                                <asp:BoundField DataField="tamanio" HeaderText="Tamaño en porciones " />
+                                <asp:BoundField DataField="estado" HeaderText="Estado" />
+                                <asp:CheckBoxField DataField="estado" HeaderText="Estado (Activo/Inactivo)" SortExpression="estado" />
+                                <asp:ButtonField CommandName="btnActualizar" ControlStyle-CssClass="btn btn-primary " Text="Actualizar" />
+                                <asp:ButtonField CommandName="btnCambiarEstado" ControlStyle-CssClass="btn btn-primary " Text="CambiarEstado" />
+                            </Columns>
+                        </asp:GridView>
 
-                    <asp:GridView ID="gvPasteles" runat="server" AutoGenerateColumns="False" DataKeyNames="idPastel" DataSourceID="SqlDataSource1" CssClass="table table-hover">
-                        <Columns>
-                            <asp:BoundField DataField="idPastel" HeaderText="idPastel" InsertVisible="False" ReadOnly="True" SortExpression="idPastel" />
-                            <asp:BoundField DataField="nombrePastel" HeaderText="nombrePastel" SortExpression="nombrePastel" />
-                            <asp:BoundField DataField="tamanio" HeaderText="tamanio" SortExpression="tamanio" />
-                            <asp:CheckBoxField DataField="estado" HeaderText="estado" SortExpression="estado" />
-                        </Columns>
-                    </asp:GridView>
-
-                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:PasteleriaDBConnectionString %>" SelectCommand="SELECT * FROM [Pastel] ORDER BY [nombrePastel]"></asp:SqlDataSource>
-
+                        <%--<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:PasteleriaDBConnectionString %>" SelectCommand="SELECT * FROM [Pastel] ORDER BY [nombrePastel]"></asp:SqlDataSource>--%>
+                    </div>
                 </div>
 
             </div>

@@ -1,0 +1,8 @@
+C:\Users\JENNIFER\Source\Repos\PasteleriaWeb\DAO3\bin\Debug\DAO3.dll
+C:\Users\JENNIFER\Source\Repos\PasteleriaWeb\DAO3\bin\Debug\DAO3.pdb
+C:\Users\JENNIFER\Source\Repos\PasteleriaWeb\DAO3\bin\Debug\DTO.dll
+C:\Users\JENNIFER\Source\Repos\PasteleriaWeb\DAO3\bin\Debug\DTO.pdb
+C:\Users\JENNIFER\Source\Repos\PasteleriaWeb\DAO3\obj\Debug\DAO3.csprojResolveAssemblyReference.cache
+C:\Users\JENNIFER\Source\Repos\PasteleriaWeb\DAO3\obj\Debug\DAO3.csproj.CoreCompileInputs.cache
+C:\Users\JENNIFER\Source\Repos\PasteleriaWeb\DAO3\obj\Debug\DAO3.dll
+C:\Users\JENNIFER\Source\Repos\PasteleriaWeb\DAO3\obj\Debug\DAO3.pdb

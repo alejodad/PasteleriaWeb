@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasteleriaWeb", "PasteleriaWeb\PasteleriaWeb.csproj", "{EB1C5350-E90E-400F-8A23-C13B27D04B8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAO3", "DAO3\DAO3.csproj", "{B3C087C4-DC98-47F4-BBF6-4EB18DF3CA14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO", "DTO\DTO.csproj", "{3B68A8DC-40AA-4B28-8ED7-FB19DD70CED7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +19,19 @@ Global
 		{EB1C5350-E90E-400F-8A23-C13B27D04B8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB1C5350-E90E-400F-8A23-C13B27D04B8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB1C5350-E90E-400F-8A23-C13B27D04B8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3C087C4-DC98-47F4-BBF6-4EB18DF3CA14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3C087C4-DC98-47F4-BBF6-4EB18DF3CA14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3C087C4-DC98-47F4-BBF6-4EB18DF3CA14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3C087C4-DC98-47F4-BBF6-4EB18DF3CA14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B68A8DC-40AA-4B28-8ED7-FB19DD70CED7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B68A8DC-40AA-4B28-8ED7-FB19DD70CED7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B68A8DC-40AA-4B28-8ED7-FB19DD70CED7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B68A8DC-40AA-4B28-8ED7-FB19DD70CED7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C9D79FDA-D82F-4E21-97AF-EBCBA811F370}
 	EndGlobalSection
 EndGlobal

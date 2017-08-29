@@ -1,0 +1,6 @@
+C:\Users\JENNIFER\Source\Repos\PasteleriaWeb\DTO\bin\Debug\DTO.dll
+C:\Users\JENNIFER\Source\Repos\PasteleriaWeb\DTO\bin\Debug\DTO.pdb
+C:\Users\JENNIFER\Source\Repos\PasteleriaWeb\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+C:\Users\JENNIFER\Source\Repos\PasteleriaWeb\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\JENNIFER\Source\Repos\PasteleriaWeb\DTO\obj\Debug\DTO.dll
+C:\Users\JENNIFER\Source\Repos\PasteleriaWeb\DTO\obj\Debug\DTO.pdb
